@@ -1,3 +1,3 @@
-// let deletBtn = addEventListener("click", addBtn(){
-     
-// })
+function deleteBtn() {
+    
+}
