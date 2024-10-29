@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <div>
-        <h1 class="">Hello World ! </h1>
-        <h2>just a test</h2>
-    </div>
+        <form class="w-full p-6 flex flex-wrap justify-around items-center">
+            <div>
+                <label for="search" id="search"></label>
+                <input type="search" name="search" id="search" placeholder="Search ..." class="w-60 h-8 bg-gray-300 border-2 border-black rounded-md">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <input type="button" value="Add Task" class="w-20 h-7 my-5 flex items-center justify-center bg-blue-500 rounded-sm">
+        </form>
+
+        
 </body>
 </html>
