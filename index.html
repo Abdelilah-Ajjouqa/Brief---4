@@ -7,57 +7,59 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="tailwind.css">
 </head>
 <body>
-        <form class="w-full p-6 flex flex-wrap justify-around items-center">
-            <span>
-                <label for="search" id="search"></label>
-                <input type="search" name="search" id="search" placeholder="Search ..." class=" w-60 h-8 bg-gray-300 border-2 border-black rounded-md">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+    <header>
+        <div class="p-8 flex justify-center flex-wrap">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" placeholder="Search ..." class="bg-gray-100 border-2 border-black rounded-md w-96 h-10 pl-1">
+        </div>
 
-            <input type="button" value="Add Task" class="w-20 h-7 my-5 flex items-center justify-center bg-blue-500 rounded-sm">
+        <!-- <form class="flex flex-wrap justify-evenly gap-6 w-full"> -->
+            <form class="grid grid-rows-3 gap-6 w-full">
+            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto">
+                <fieldset class="box-border w-5/6 mx-auto">
+                    <legend class="text-center text-2xl">To Do</legend>
+                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Workshop - 3</li>
+                            <button type="button">Remove</button>
+                        </div>
+                        <li>Presentation de brief - 3</li>
+                        <li>Complet Css course</li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto">
+                <fieldset class="box-border w-5/6 mx-auto">
+                    <legend class="text-center text-2xl">In Progress</legend>
+                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
+                        <li>Workshop - 2</li>
+                        <li>Documentaire sur Js</li>
+                        <li>Brief - 4</li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto">
+                <fieldset class="box-border w-5/6 mx-auto">
+                    <legend class="text-center text-2xl">Done</legend>
+                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
+                        <li>Workshop - 1</li>
+                        <li>Presentation de brief - 2</li>
+                        <li>Presentation de brief - 1</li>
+                        <li>Brief - 3</li>
+                        <li>Brief - 2</li>
+                        <li>Brief - 1</li>
+                    </ul>
+                </fieldset>
+            </div>
         </form>
 
-        <section class="grid grid-cols-3 gap-x-8 text-center mx-auto">
-
-            <fieldset>
-                <legend>To Do</legend>
-                <legend class="border-b-2 border-black"></legend>
-                <div class="text-xl pt-5 h-96">
-                    <ul>
-                        <li class="h-24 py-4">Brief Soutenances Croisées
-                            <button onclick=""></button>
-                        </li>
-                        <li>Brief Soutenances Croisées</li>
-                        <li>Brief Soutenances Croisées</li>
-                        <li>Brief Soutenances Croisées</li>
-                    </ul>
-                </div>
-                <button type="submit"></button>
-            </fieldset>
-
-            <fieldset>
-                <legend class="border-b-2 border-black">In progress</legend>
-                <ul class="flex flex-wrap text-xl pt-5">
-                    <li>Brief Soutenances Croisées</li>
-                    <li>Brief Soutenances Croisées</li>
-                    <li>Brief Soutenances Croisées</li>
-                    <li>Brief Soutenances Croisées</li>
-                </ul>
-            </fieldset>
-
-            <fieldse>
-                <legend class="border-b-2 border-black">Done</legend>
-                <ul class="flex flex-wrap text-xl pt-5">
-                    <li>Brief Soutenances Croisées</li>
-                    <li>Brief Soutenances Croisées</li>
-                    <li>Brief Soutenances Croisées</li>
-                    <li>Brief Soutenances Croisées</li>
-                </ul>
-            </fieldset>
-
-        </section>
-        <script src="m"></script>
+    </header>
+        
+<script src="main.js"></script>
 </body>
 </html>
