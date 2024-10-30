@@ -18,3 +18,7 @@
     height: 2rem;
     box-shadow:inset 0px 0px 3px rgb(53, 43, 43);
 }
+
+#hidden-page {
+    display: none;
+}
