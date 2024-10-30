@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="tailwind.css">
@@ -15,9 +14,11 @@
             <label for="search"></label>
             <input type="search" name="search" id="search" placeholder="Search ..." class="bg-gray-100 border-2 border-black rounded-md w-96 h-10 pl-1">
         </div>
+    </header>
 
+        <!-- Mobile scren -->
         <!-- <form class="flex flex-wrap justify-evenly gap-6 w-full"> -->
-            <form class="grid grid-rows-3 gap-6 w-full">
+            <form class="grid grid-rows-3 gap-6 w-full md:flex md:flex-wrap lg:bg-black">
 
 
             <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto py-11">
@@ -150,8 +151,9 @@
 
 
         </form>
-
-    </header>
+        
+        <!-- Desktop screen -->
+        
         
 <script src="main.js"></script>
 </body>
