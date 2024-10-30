@@ -11,22 +11,21 @@
 </head>
 <body>
     <header>
-        <div class="p-8 flex justify-center flex-wrap">
+        <div class="p-8 flex flex-col items-center gap-y-5 flex-wrap">
             <label for="search"></label>
             <input type="search" name="search" id="search" placeholder="Search ..." class="bg-gray-100 border-2 border-black rounded-md w-96 h-10 pl-1">
+            <button class="btnAdd rounded-md bg-gradient-to-r from-green-300 to-stone-100">Add New</button>
         </div>
     </header>
 
         <!-- Mobile scren -->
-            <form class="grid grid-rows-3 gap-6 w-full md:flex md:flex-wrap">
-
-
-            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 md:w-2/5 mx-auto py-11">
+            <form class="grid grid-rows-3 gap-6 w-full md:flex md:flex-wrap md:justify-evenly md:gap-x-0 md:gap-y-3">
+                
+            <div class="bg-gradient-to-r from-purple-500 to-blue-100 rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
                 <fieldset class="box-border w-5/6 mx-auto">
                     <legend class="text-center text-2xl">To Do</legend>
 
                     <ul class="border-t-2 border-black text-center pt-2 flex flex-col items-center gap-2">
-
 
                         <div class="my-3 text-lg mx-auto w-11/12 border-l-2 border border-black rounded-md">
                             <li>Workshop - 3</li>
@@ -52,14 +51,12 @@
                             </div>
                         </div>
 
-                        <button class="btnAdd rounded-md ">Add New</button>
                     </ul>
-
 
                 </fieldset>
             </div>
 
-            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 md:w-2/5 mx-auto">
+            <div class="bg-gradient-to-r from-purple-500 to-blue-100 rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
                 <fieldset class="box-border w-5/6 mx-auto">
                     <legend class="text-center text-2xl">In Progress</legend>
                     <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
@@ -92,7 +89,7 @@
                 </fieldset>
             </div>
 
-            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 md:w-2/5 mx-auto">
+            <div class="bg-gradient-to-r from-purple-500 to-blue-100 rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
                 <fieldset class="box-border w-5/6 mx-auto">
                     <legend class="text-center text-2xl">Done</legend>
                     <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
@@ -149,45 +146,45 @@
                 </fieldset>
             </div>
 
+            <section class="add-backdrop bg-gradient-to-r from-purple-500 to-blue-100 rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
+                <div>
+                    <nav>
+                        <h1 class="border-b-2 border-black text-center">Add New Task</h1>
+                    </nav>
+    
+                    <div class="pl-[5%] py-3">
+                        <form action="" class="flex flex-col items-center">
+        
+                            <label for="title">Title :</label><br>
+                            <input type="text" name="title" id="title" class="border-black border-2 rounded-sm bg-slate-100 w-64"><br><br>
+        
+                            <label for="title">Description :</label><br>
+                            <input type="text" name="title" id="title" class="border-black border-2 rounded-sm bg-slate-100 w-96 h-24"><br><br>
+        
+                            <label for="status">Add a Status :</label>
+                            
+                            <div class="w-11/12 flex flex-col">
+                                <span>
+                                    <input type="radio" name="To-Do" id="todo" class="border-black border-2 rounded-sm bg-slate-400 w-5">
+                                    <label for="todo"><b>To Do</b></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="In-Progress" id="inProgrees" class="border-black border-2 rounded-sm bg-slate-400 w-5">
+                                    <label for="todo"><b>In Progrees</b></label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="Done" id="done" class="border-black border-2 rounded-sm bg-slate-400 w-5">
+                                    <label for="todo"><b>Done</b></label>
+                                </span>
+                            </div>
+        
+                        </form>
+                    </div>
+    
+                </div>
+            </section>
 
         </form>
-        
-        <section class="w-11/12 mx-auto ">
-            <div id="hidden-page" class="bg-red-500 hidden">
-                <nav>
-                    <h1 class="border-b-2 border-black text-center">Add New Task</h1>
-                </nav>
-
-                <form action="" class="flex flex-col items-center">
-
-                    <label for="title">Title :</label>
-                    <input type="text" name="title" id="title" class="border-black border-2 rounded-sm bg-slate-400 w-96"><br>
-
-                    <label for="title">Description :</label>
-                    <input type="text" name="title" id="title" class="border-black border-2 rounded-sm bg-slate-400 w-96"><br>
-
-                    <label for="status">Add a Status :</label>
-                    
-                    <div class="w-11/12 flex flex-col items-center">
-                        <span>
-                            <input type="radio" name="To-Do" id="todo" class="border-black border-2 rounded-sm bg-slate-400 w-5">
-                            <label for="todo">To Do</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="In-Progress" id="inProgrees" class="border-black border-2 rounded-sm bg-slate-400 w-5">
-                            <label for="todo">In Progrees</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="Done" id="done" class="border-black border-2 rounded-sm bg-slate-400 w-5">
-                            <label for="todo">Done</label>
-                        </span>
-                    </div>
-
-                </form>
-
-            </div>
-        </section>
-        
         
 <script src="main.js"></script>
 </body>
