@@ -18,17 +18,43 @@
 
         <!-- <form class="flex flex-wrap justify-evenly gap-6 w-full"> -->
             <form class="grid grid-rows-3 gap-6 w-full">
-            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto">
+
+
+            <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto py-11">
                 <fieldset class="box-border w-5/6 mx-auto">
                     <legend class="text-center text-2xl">To Do</legend>
-                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
+
+                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col items-center gap-2">
+
+
                         <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
                             <li>Workshop - 3</li>
-                            <button type="button">Remove</button>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
                         </div>
-                        <li>Presentation de brief - 3</li>
-                        <li>Complet Css course</li>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Presentation de brief - 3</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Complet Css course</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <button class="btnAdd rounded-md ">Add New</button>
                     </ul>
+
+
                 </fieldset>
             </div>
 
@@ -36,9 +62,31 @@
                 <fieldset class="box-border w-5/6 mx-auto">
                     <legend class="text-center text-2xl">In Progress</legend>
                     <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
-                        <li>Workshop - 2</li>
-                        <li>Documentaire sur Js</li>
-                        <li>Brief - 4</li>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Workshop - 2</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Documentaire sur Js</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Brief - 4</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
                     </ul>
                 </fieldset>
             </div>
@@ -47,15 +95,60 @@
                 <fieldset class="box-border w-5/6 mx-auto">
                     <legend class="text-center text-2xl">Done</legend>
                     <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
-                        <li>Workshop - 1</li>
-                        <li>Presentation de brief - 2</li>
-                        <li>Presentation de brief - 1</li>
-                        <li>Brief - 3</li>
-                        <li>Brief - 2</li>
-                        <li>Brief - 1</li>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Workshop - 1</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Presentation de brief - 2</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Presentation de brief - 1</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Brief - 3</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Brief - 2</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
+                        <div class=" rounded-sm my-3 text-lg mx-auto w-11/12 bg-fuchsia-600">
+                            <li>Brief - 1</li>
+                            <div class="flex justify-evenly">
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash relative "></i></button>
+                            </div>
+                        </div>
+
                     </ul>
                 </fieldset>
             </div>
+
+
         </form>
 
     </header>
