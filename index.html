@@ -18,7 +18,7 @@
 
         <!-- Mobile scren -->
         <!-- <form class="flex flex-wrap justify-evenly gap-6 w-full"> -->
-            <form class="grid grid-rows-3 gap-6 w-full md:flex md:flex-wrap lg:bg-black">
+            <form class="grid grid-rows-3 gap-6 w-full md:flex md:flex-wrap">
 
 
             <div class="bg-gradient-to-r from-red-400 to-blue-500 rounded-md w-5/6 mx-auto py-11">
@@ -152,7 +152,41 @@
 
         </form>
         
-        <!-- Desktop screen -->
+        <section class="hidden w-11/12 mx-auto ">
+            <div>
+                <nav>
+                    <h1 class="border-b-4 border-black ">Add New Task</h1>
+                </nav>
+
+                <form action="" class="flex flex-col items-center">
+
+                    <label for="title">Title :</label>
+                    <input type="text" name="title" id="title" class="border-black border-2 rounded-sm bg-slate-400 w-96"><br>
+
+                    <label for="title">Description :</label>
+                    <input type="text" name="title" id="title" class="border-black border-2 rounded-sm bg-slate-400 w-96"><br>
+
+                    <label for="status">Add a Status :</label>
+                    
+                    <div class="w-56 flex justify-around">
+                        <span>
+                            <input type="radio" name="To-Do" id="todo" class="border-black border-2 rounded-sm bg-slate-400 w-5">
+                            <label for="todo">To Do</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="In-Progress" id="inProgrees" class="border-black border-2 rounded-sm bg-slate-400 w-5">
+                            <label for="todo">In Progrees</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="Done" id="done" class="border-black border-2 rounded-sm bg-slate-400 w-5">
+                            <label for="todo">Done</label>
+                        </span>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
         
         
 <script src="main.js"></script>
