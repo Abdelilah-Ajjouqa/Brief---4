@@ -1,5 +1,5 @@
-const btnAjouter = document.getElementsByClassName("btnAdd");
+const btnAjouter = document.getElementById("addNew");
 
-btnAjouter.addEventListener("click", ()=>{
-    document.getElementById("task-add").classList.remove("hidden");
+btnAjouter.addEventListener("click", () => {
+    document.getElementById("taskAdd").classList.remove("hidden");
 });
