@@ -76,25 +76,25 @@ ajtForm.addEventListener("submit", (e) => {
 
 // display counter
 function displayCounter() {
-    let todoCount = 0;
-    let doingCount = 0;
-    let doneCount = 0;
+  let todoCount = 0;
+  let doingCount = 0;
+  let doneCount = 0;
 
-    // Loop through tasks and count based on status
-    for (let i = 0; i < tasks.length; i++) {
-        if (tasks[i].Status === "todo") {
-            todoCount++;
-        } else if (tasks[i].Status === "inprogress") {
-            doingCount++;
-        } else if (tasks[i].Status === "done") {
-            doneCount++;
-        }
+  // Loop through tasks and count based on status
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i].Status === "todo") {
+      todoCount++;
+    } else if (tasks[i].Status === "inprogress") {
+      doingCount++;
+    } else if (tasks[i].Status === "done") {
+      doneCount++;
     }
+  }
 
-    // Update the DOM with the counts
-    document.getElementById("todoCount").innerText = `${todoCount}`;
-    document.getElementById("doingCount").innerText = `${doingCount}`;
-    document.getElementById("doneCount").innerText = `${doneCount}`;
+  // Update the DOM with the counts
+  document.getElementById("todoCount").innerText = `${todoCount}`;
+  document.getElementById("doingCount").innerText = `${doingCount}`;
+  document.getElementById("doneCount").innerText = `${doneCount}`;
 }
 
 //affichage des infos
@@ -121,7 +121,7 @@ function displayTask(task) {
   const taskCard = document.createElement("div");
 
   taskCard.className = ` my-3 text-lg mx-auto w-11/12 ${task.Type} rounded-md ${background}`;
-   taskCard.innerHTML = `
+  taskCard.innerHTML = `
         <div class="flex justify-between items-center mb-4">
             <li class="text-3xl font-semibold text-white">${task.Title}</li>
             <span class="text-sm font-light text-gray-200">${task.Date}</span>
@@ -141,11 +141,10 @@ function displayTask(task) {
 
   // add button delete
   taskCard.querySelector(".taskDelete").addEventListener("click", () => {
-        targetSection.removeChild(taskCard);
-        tasks = tasks.filter((t)=> t.id !== task.id)
-        displayCounter();
+    targetSection.removeChild(taskCard);
+    tasks = tasks.filter((t) => t.id !== task.id);
+    displayCounter();
   });
-
 }
 
 // add button edit
