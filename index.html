@@ -23,32 +23,8 @@
                 
             <div class="bg-sky-300 bg-opacity-70 shadow-lg rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
                 <fieldset class="box-border w-5/6 md:h-[28rem] md:overflow-y-auto lg:h-[32rem]  mx-auto">
-                    <legend class="text-center text-2xl">To Do</legend>
-                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col items-center gap-2">
-
-                        <div id="p-1" class="my-3 text-lg mx-auto w-11/12 bg-red-500 rounded-md">
-                            <li id="task">Workshop - 3</li>
-                            <div class="flex justify-evenly">
-                                <button><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button id="taskDelete"><i class="fa-solid fa-trash relative "></i></button>
-                            </div>
-                        </div>
-
-                        <div id="p-2" class="my-3 text-lg mx-auto w-11/12 bg-green-500 rounded-md">
-                            <li id="task">Wodfbwd</li>
-                            <div class="flex justify-evenly">
-                                <button><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button id="taskDelete"><i class="fa-solid fa-trash relative "></i></button>
-                            </div>
-                        </div>
-
-                        <div id="p-3" class="my-3 text-lg mx-auto w-11/12 bg-orange-500 rounded-md">
-                            <li id="task">eqfsgnh,bjn</li>
-                            <div class="flex justify-evenly">
-                                <button><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button id="taskDelete"><i class="fa-solid fa-trash relative "></i></button>
-                            </div>
-                        </div>
+                    <legend id="toDo" class="text-center text-2xl">To Do</legend>
+                    <ul id="todoSection" class="divide-y-2 border-t-2 border-black pt-2 flex flex-col items-center gap-2">
 
                     </ul>
                 </fieldset>
@@ -56,23 +32,23 @@
 
             <div class="bg-sky-300 bg-opacity-70 shadow-lg rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
                 <fieldset class="box-border w-5/6 md:h-[28rem] md:overflow-y-auto lg:h-[32rem]  mx-auto">
-                    <legend class="text-center text-2xl">In Progress</legend>
-                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
+                    <legend id="inProgress" class="text-center text-2xl">In Progress</legend>
+                    <ul id="doingSection" class="border-t-2 border-black text-center pt-2 flex flex-col gap-2">
                     </ul>
                 </fieldset>
             </div>
 
             <div class="bg-sky-300 bg-opacity-70 shadow-lg rounded-md w-5/6 md:w-[45%] lg:w-[30%] mx-auto py-2">
                 <fieldset class="box-border w-5/6 md:h-[28rem] md:overflow-y-auto lg:h-[32rem]  mx-auto">
-                    <legend class="text-center text-2xl">Done</legend>
-                    <ul class="border-t-2 border-black text-center pt-2 flex flex-col gap-2 ">
+                    <legend id="done" class="text-center text-2xl">Done</legend>
+                    <ul id="doneSection" class="border-t-2 border-black text-center pt-2 flex flex-col gap-2 ">
                     </ul>
                 </fieldset>
             </div>
             </form>
 
             <!-- afichage d'ajouter -->
-            <div class=" flex justify-center "> 
+            <div class=" flex justify-center"> 
                 <section id="newTask" class="hidden absolute top-[25%] backdrop-blur-sm bg-blue-300 bg-opacity-70 shadow-lg rounded-md w-5/6 md:w-[45%] lg:w-[30%]  py-2">
                     <div>
                         <span class="flex justify-between border-b-2 mx-6">
@@ -81,27 +57,14 @@
                         </span>
         
                         <div class="pl-[5%] py-3 box-border">
-                            <form action="" class="flex flex-col">
+                            <form id="ajtForm" action="" class="flex flex-col">
             
                                 <label for="title">Title :</label>
                                 <input id="title" type="text" name="title" required class="border-black border-2 rounded-sm bg-slate-100 w-[65%] shadow-md"><br>
             
                                 <label for="description">Description :</label>
-                                <input id="description" type="text" name="description" class="border-black border-2 rounded-sm bg-slate-100 w-[95%] h-24 shadow-md box-border"><br>
+                                <textarea id="description" type="text" name="description" class="border-black border-2 rounded-sm bg-slate-100 w-[95%] h-24 shadow-md box-border"></textarea><br>
             
-                                
-                                    <!-- <span>
-                                        <input id="todo" class="peer/todo" type="radio" name="status" checked />
-                                        <label for="todo" class="peer-checked/todo:text-blue-900">To-do</label>
-                                    </span>
-                                    <span>
-                                        <input id="inprogress" class="peer/inprogress" type="radio" name="status" />
-                                        <label for="inprogress" class="peer-checked/inprogress:text-blue-900">In progress</label>
-                                    </span>
-                                    <span>
-                                        <input id="done" class="peer/done" type="radio" name="status" />
-                                        <label for="done" class="peer-checked/done:text-blue-900">Done</label>
-                                    </span> -->
                                 <label for="status">Add a Status :</label>
                                 <select id="status"name="choix" class="w-[15%] bg-sky-400 rounded-md text-center">
                                     <option value="todo">To-do</option>
